@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14 - Operaciones sobre Numeros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
+    <div class="container text-center p-5 bg-white rounded shadow">
+        <h1 class="mb-3 text-primary">Calculos Sobre Numeros</h1>
+        <form id="formulario" class="text-start">
+            <div class="mt-4">
+                <label for="mainInput" class="form-label">Ingrese x cantidad de numeros:</label>
+                <textarea name="mainInput" id="numeros" class="form-control fs-5 text-dark"
+                    style="resize:none; height:60px; text-align:center;"
+                    placeholder="Ej. 4, 5, 6, 7, ..."></textarea>
+            </div>
+            <br>
+            <div class="d-grid">
+                <button type="button" onclick="calcularOperaciones()"
+                    class="btn btn-outline-primary fw-bold">Calcular</button>
+            </div>
+
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control text-primary" placeholder="Numero Mayor" id="numayor"
+                            readonly disabled>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control text-bg-info" placeholder="Numero Menor" id="numenor"
+                            readonly disabled>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control text-bg-primary" placeholder="Promedio" id="promedio"
+                            readonly disabled>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="js/ejercicio14.js"></script>
+</html>

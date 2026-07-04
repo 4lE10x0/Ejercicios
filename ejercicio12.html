@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12 - Dolares a Pesos Mexicanos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
+    <div class="container text-center p-5 bg-white rounded shadow">
+        <h1 class="mb-3 text-warning">Divisas</h1>
+        <h5 class="text-muted mb-4 text-warning">Convierte de Dolares a Pesos Mx</h5>
+        <form id="formulario" class="text-start">
+            <div class="mb-3">
+                <label for="dolares">Pesos Mexicanos:</label>
+                <input type="number" id="pesosmx" placeholder="Ingrese el valor en Pesos Mexicanos" required pattern="^[1-9][0-9]*$" class="form-control" min="1">
+            </div>
+            <div class="d-grid">
+                <button type="button" onclick="convertirDivisa()" class="btn btn-warning">Convertir</button>
+            </div>
+        </form>
+
+        <div class="mt-4">
+            <label for="resultado" class="form-label">Dolares:</label>
+            <textarea name="resultado" id="dolares" readonly disabled class="form-control fw-bold fs-5 text-bg-danger" style="resize:none; height:60px; text-align:center;"></textarea>
+        </div>
+    </div>
+</body>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/ejercicio12.js"></script>
+</html>

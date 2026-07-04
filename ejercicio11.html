@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11 - Kilometros a Millas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
+    <div class="container text-center p-5 bg-white rounded shadow">
+        <h1 class="mb-3 text-success">Convertidor de Distancias</h1>
+        <h5 class="text-muted mb-4 text-success">Convierte de Kilómetros a Millas</h5>
+        <form id="formulario" class="text-start">
+            <div class="mb-3">
+                <label for="kilometros">Distancia en Kilómetros:</label>
+                <input type="number" id="kilometros" placeholder="Ingrese la distancia en Kilómetros" required pattern="^[1-9][0-9]*$" class="form-control" min="1">
+            </div>
+            <div class="d-grid">
+                <button type="button" onclick="convertirDistancia()" class="btn btn-outline-success">Convertir</button>
+            </div>
+        </form>
+
+        <div class="mt-4">
+            <label for="resultado" class="form-label">Distancia en Millas:</label>
+            <textarea name="resultado" id="millas" readonly disabled class="form-control text-sucess fw-bold fs-5" style="resize:none; height:60px; text-align:center;"></textarea>
+        </div>
+    </div>
+</body>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/ejercicio11.js"></script>
+</html>
