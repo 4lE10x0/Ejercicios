@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16 - Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25/dist/sweetalert2.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25/dist/sweetalert2.all.min.js"></script>
+    <script src="js/ejercicio16.js"></script>
+    <style>
+        .bg-purple {
+            background-color: #6f42c1;
+        }
+
+        .text-purple {
+            color: #6f42c1;
+        }
+
+        .text-bg-purple {
+            background-color: #6f42c1;
+            color: white;
+        }
+
+        .bg-lightpurple {
+            background-color: #d8b4e2;
+        }
+
+        .text-lightpurple {
+            color: #d8b4e2;
+        }
+
+        .text-bg-lightpurple {
+            background-color: #d8b4e2;
+            color: white;
+        }
+
+        .btn-purple {
+            background-color: #6f42c1;
+            color: white;
+        }
+
+        .btn-purple:hover {
+            background-color: #d8b4e2;
+            color: #6f42c1;
+        }
+
+        .btn-lightpurple {
+            background-color: #d8b4e2;
+            color: #6f42c1;
+        }
+
+        .btn-lightpurple:hover {
+            background-color: #6f42c1;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body class="bg-light d-flex justify-content-center align-items-center vh-100">
+        <div class="container text-center p-5 bg-white rounded shadow">
+            <h1 class="mb-3 text-purple fw-bold">Calculadora</h1>
+            <form id="formulario" class="text-start">
+                <div class="mb-3">
+                    <label for="numero1" class="text-purple fw-bold">Numero:</label>
+                    <input type="text" id="numero1" placeholder="Ej: 5, 6" required pattern="^[1-9][0-9]"
+                        class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="numero2" class="text-purple fw-bold">Numero:</label>
+                    <input type="text" id="numero2" placeholder="Ej: 5, 6" required pattern="^[1-9][0-9]"
+                        class="form-control">
+                </div>
+
+                <div class="container mt-4">
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-purple w-100" onclick="calcularOperacion('suma')">Sumar</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-lightpurple w-100" onclick="calcularOperacion('resta')">Restar</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-purple w-100" onclick="calcularOperacion('multiplicacion')">Multiplicar</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-lightpurple w-100" onclick="calcularOperacion('division')">dividir</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="mt-4">
+                <label for="resultado" class="form-label text-purple fw-bold">Resultado:</label>
+                <textarea name="resultado" id="resultado" readonly disabled class="form-control fw-bold fs-5 bg-purple"
+                    style="resize:none; height:60px; text-align:center;"></textarea>
+            </div>
+        </div>
+    </body>
+</body>
+
+</html>
